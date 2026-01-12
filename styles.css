@@ -1,3 +1,102 @@
+/* Font Face Declarations */
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-Xbold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-XboldItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-Heavy.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-HeavyItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-Xlight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColumbiaSerial';
+    src: url('fonts/SoftMaker - ColumbiaSerial-XlightItalic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -13,7 +112,7 @@
 }
 
 body {
-    font-family: 'Lora', Georgia, serif;
+    font-family: 'ColumbiaSerial', Georgia, serif;
     color: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
@@ -74,7 +173,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    font-family: 'Lora', Georgia, serif;
+    font-family: 'ColumbiaSerial', Georgia, serif;
     font-size: 1rem;
 }
 
@@ -119,7 +218,7 @@ body {
     color: var(--white);
     text-align: left;
     cursor: pointer;
-    font-family: 'Lora', Georgia, serif;
+    font-family: 'ColumbiaSerial', Georgia, serif;
     font-size: 1rem;
     transition: background 0.3s ease;
 }
@@ -236,7 +335,7 @@ body {
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Lora', Georgia, serif;
+    font-family: 'ColumbiaSerial', Georgia, serif;
     border-radius: 4px;
 }
 
