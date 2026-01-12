@@ -436,8 +436,8 @@ body {
 }
 
 .product-shot {
-    width: 200px;
-    height: 250px;
+    width: 320px;
+    height: 400px;
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
@@ -559,6 +559,11 @@ body {
     .product-description {
         font-size: 0.95rem;
     }
+
+    .product-shot {
+        width: 260px;
+        height: 340px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -587,7 +592,7 @@ body {
     }
 
     .product-shot {
-        width: 150px;
-        height: 200px;
+        width: 200px;
+        height: 280px;
     }
 }
