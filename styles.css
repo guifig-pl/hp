@@ -345,6 +345,149 @@ body {
     box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
 }
 
+/* Product Sections */
+.product-section {
+    background: var(--white);
+    color: var(--dark-purple);
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+}
+
+/* Layout A: Left stylized image, Right product details */
+.layout-a .product-image-side {
+    order: 1;
+}
+
+.layout-a .product-details-side {
+    order: 2;
+}
+
+/* Layout B: Left product details, Right stylized image */
+.layout-b .product-details-side {
+    order: 1;
+}
+
+.layout-b .product-image-side {
+    order: 2;
+}
+
+.product-image-side {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.stylized-image {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stylized-image::after {
+    content: 'Stylized Image';
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.video-button {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: var(--gold);
+    color: var(--darker-purple);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'ColumbiaSerial', Georgia, serif;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.video-button:hover {
+    background: #b89651;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
+}
+
+.product-details-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--white);
+}
+
+.product-shot {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.product-shot::after {
+    content: 'Product Image';
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--dark-purple);
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: var(--dark-purple);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.shop-button {
+    background: var(--gold);
+    color: var(--darker-purple);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'ColumbiaSerial', Georgia, serif;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.shop-button:hover {
+    background: #b89651;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 169, 97, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -396,6 +539,32 @@ body {
         padding: 0.8rem 2rem;
         font-size: 0.9rem;
     }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .layout-a .product-image-side,
+    .layout-b .product-image-side {
+        order: 1;
+    }
+
+    .layout-a .product-details-side,
+    .layout-b .product-details-side {
+        order: 2;
+    }
+
+    .product-image-side {
+        min-height: 400px;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-description {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -413,5 +582,18 @@ body {
 
     .logo-img {
         max-height: 60px;
+    }
+
+    .product-title {
+        font-size: 1.3rem;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+    }
+
+    .product-shot {
+        width: 150px;
+        height: 200px;
     }
 }
